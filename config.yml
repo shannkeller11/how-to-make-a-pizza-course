@@ -1,0 +1,16 @@
+title: How To Make a Pizza
+description: Make a Pepperoni Pizza
+template:
+  repo: how-to-make-a-pizza-template
+  name: how-to-make-a-pizza
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
